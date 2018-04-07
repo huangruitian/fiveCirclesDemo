@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <title>Title</title>
+    <style type="text/css">
+    *{ 
+    	margin: 0;
+    	padding: 0;
+     }
+     /*外面大盒子*/
+     .warpper{
+     	position: fixed;
+     	left: 50%;
+     	top: 50%;
+     	/*border: 1px solid red;*/
+     	width: 340px;
+     	height: 300px;
+     	margin-top: -150px;
+     	margin-left: -170px;
+     }
+     .demo{
+     	width: 100px;
+     	height: 100px;
+     	border-radius: 50%;
+     	position: absolute;
+     }
+     .div1{
+     	border:10px solid blue;
+     	top:80px;
+     }
+     .div11{  	
+     	border:10px solid blue;
+     	top:80px;
+     	z-index:2;
+     	border-left-color: transparent;
+	    border-top-color: transparent;
+	    border-bottom-color: transparent;
+     }
+     .div2{
+     	border:10px solid yellow;
+     	top:120px;
+     	left: 60px;
+     }
+     .div22{
+     	border:10px solid yellow;
+     	top:120px;
+     	left: 60px;
+     	z-index:1;
+     	border-right-color: transparent;
+     }
+     .div3{
+     	border:10px solid black;
+     	top:80px;
+     	left:120px;
+     }
+     .div33{
+     	border:10px solid black;
+     	top:80px;
+     	left:120px;
+     	z-index:1;
+     	border-left-color: transparent;
+	    border-top-color: transparent;
+	    border-bottom-color: transparent;
+     }
+     .div4{
+     	border:10px solid green;
+     	top:120px;
+     	left:180px;
+     }
+     .div44{
+     	border:10px solid green;
+     	top:120px;
+     	left:180px;
+     	z-index:1;
+     	border-left-color: transparent;
+	    border-top-color: transparent;
+	    border-bottom-color: transparent;
+     }
+     .div5{
+     	border:10px solid red;
+     	top:80px;
+     	left:240px;
+     }
+    </style>
+</head>
+<body>
+	<div class="warpper">
+		<!-- 第一个环 -->
+        <div class="demo div1"></div>
+        <div class="demo div11"></div>
+       <!--  第二个环 -->
+        <div class="demo div2"></div>
+        <div class="demo div22"></div>
+       <!--  第三个环 -->
+        <div class="demo div3"></div>
+        <div class="demo div33"></div>
+        <!-- 第四个环 -->
+        <div class="demo div4"></div>
+        <div class="demo div44"></div>
+        <!-- 第五个环 -->
+        <div class="demo div5"></div>
+	</div>
+</body>
+</html>
+
